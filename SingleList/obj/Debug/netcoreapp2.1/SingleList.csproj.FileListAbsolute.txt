@@ -1,0 +1,11 @@
+/Users/trevorheehs/Projects/SingleList/SingleList/bin/Debug/netcoreapp2.1/SingleList.deps.json
+/Users/trevorheehs/Projects/SingleList/SingleList/bin/Debug/netcoreapp2.1/SingleList.runtimeconfig.json
+/Users/trevorheehs/Projects/SingleList/SingleList/bin/Debug/netcoreapp2.1/SingleList.runtimeconfig.dev.json
+/Users/trevorheehs/Projects/SingleList/SingleList/bin/Debug/netcoreapp2.1/SingleList.dll
+/Users/trevorheehs/Projects/SingleList/SingleList/bin/Debug/netcoreapp2.1/SingleList.pdb
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.csprojAssemblyReference.cache
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.csproj.CoreCompileInputs.cache
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.AssemblyInfoInputs.cache
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.AssemblyInfo.cs
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.dll
+/Users/trevorheehs/Projects/SingleList/SingleList/obj/Debug/netcoreapp2.1/SingleList.pdb
