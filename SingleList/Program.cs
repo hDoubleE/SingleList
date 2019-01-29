@@ -7,42 +7,76 @@ namespace SingleList
         public static void Main(string[] args)
 
         {
-            CustomLinkedList<int> list1 = new CustomLinkedList<int>();
+            LinkedList<int> list1 = new LinkedList<int>();
 
-            list1.AddFirst(7);
-            list1.AddFirst(5);
             list1.AddFirst(3);
 
-            //list1.PrintLinkedList(list1);
+            // +-----------+-----------+
+            // |     3     |   Null    |
+            // +-----------+-----------+
 
-            list1.AddLast(9);
-            list1.AddLast(11);
+            list1.AddLast(5);
 
-            //list1.PrintLinkedList(list1);
+            // +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next    |  |     5     |   Null    |      
+            // +-----------+-----------+  +-----------+-----------+
 
-            Console.WriteLine(list1.Contains(11));
+            // +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Null    |      
+            // +-----------+-----------+  +-----------+-----------+
+
+            list1.AddLast(7);
+
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Next    |  |      7    |    Null   | 
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Next  -------->   7    |    Null   | 
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+
+            LinkedList<int>.PrintLinkedList(list1);
+
+            // 3 --> 5 --> 7 --> Null
+
+            Console.WriteLine(list1.Contains(5));
+
+            // True
 
             list1.RemoveLast();
 
-            //list1.PrintLinkedList(list1);
+            // +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Null    |      
+            // +-----------+-----------+  +-----------+-----------+
+
+            LinkedList<int>.PrintLinkedList(list1);
+
+            // 3 --> 5 --> Null
+
+            list1.AddLast(15);
+
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Next    |  |     15    |    Null   | 
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+            // |     3     |   Next -------->   5     |   Next  -------->  15    |    Null   | 
+            // +-----------+-----------+  +-----------+-----------+  +-----------+-----------+
+
+            LinkedList<int>.PrintLinkedList(list1);
+
+            // 3 --> 5 --> 15 --> Null
 
             list1.RemoveFirst();
 
-            //list1.PrintLinkedList(list1);
+            LinkedList<int>.PrintLinkedList(list1);
 
-            // Output:
-            // 3-- > 5-- > 7-- > Null
-            // 3-- > 5-- > 7-- > 9-- > 11-- > Null
-            // True
-            // 3-- > 5-- > 7-- > 9-- > Null
-            // 5-- > 7-- > 9-- > Null
+            //5 --> 15 --> Null
 
             list1.Clear();
-            CustomLinkedList<int>.PrintLinkedList(list1);
+            LinkedList<int>.PrintLinkedList(list1);
 
-            // Output:
             // Null
-
         }
     }
 }

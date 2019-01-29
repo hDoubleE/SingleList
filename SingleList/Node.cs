@@ -4,18 +4,19 @@ namespace SingleList
 {
     // Create a Node class to define a node.
 
-    public class CustomNode<T>
+    public class Node<T>
     {
-        // Constructor specifies node value.
-        public CustomNode(T value)
+        // Constructor sets initial node value.
+        public Node(T value)
         {
             Value = value;
         }
-        // Property: Node Value.
+
+        // public Property: Value of Node.
         public T Value { get; set; }
 
         // Property: NextPointer
-        public CustomNode<T> NextPointer { get; set; }
+        public Node<T> Next { get; set; }
     }
 
 }

@@ -2,7 +2,11 @@
 
 namespace SingleList
 {
-    public class CustomLinkedList<T> :
+    // Linked List inherits from ICollection<T> interface.
+    // To define methods to manipulate Generic <T> collections.
+    // Allows me to make a custom collection<T> of Linked List Nodes.
+
+    public class LinkedList<T> :
         System.Collections.Generic.ICollection<T>
     {
 
@@ -228,7 +232,7 @@ namespace SingleList
                     // If any node is removed:
                     return true;
                 }
-                // If nothing removed, eventually current will return null.
+                // If nothing removed, eventually current will be null.
                 // Stop at last node:
                 previous = current;
                 current = current.Next;
@@ -262,14 +266,14 @@ namespace SingleList
         {
             // Possible in C# due to Garbage Collection.
             // After setting to null/0 list nodes are garbage collected. 
-            // In C/C++ you would have to iterate and remove each node.
+            // In C/C++ you would have to iterate and de-allocate each node in memory.
 
             Head = null;
             Tail = null;
             Count = 0;
         }
 
-        public static void PrintLinkedList(CustomLinkedList<T> list)
+        public static void PrintLinkedList(LinkedList<T> list)
         {
             foreach (var node in list)
             {
